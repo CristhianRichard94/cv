@@ -1,0 +1,44 @@
+@import '../../../assets/styles/styles.scss';
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template: "side1 main side2" 1fr "footer footer footer" 40px / 25% 50% 25%
+}
+
+main {
+    grid-area: main;
+    background-color: $background-light-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-dark-color;
+}
+
+.side {
+    background-color: $text-dark-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-light-color;
+}
+.side1 {
+    grid-area: side1;
+    
+}
+.side2 {
+    grid-area: side2;
+}
+
+footer {
+    grid-area: footer;
+    background-color: $background-dark-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-light-color;
+}

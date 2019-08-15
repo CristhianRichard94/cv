@@ -1,0 +1,9 @@
+@import '../../../assets/styles/global/colors';
+
+#nav-bar {
+    grid-area: header;
+    background-color: $background-dark-color;
+    display: flex;
+    align-items: center;
+    color: $text-light-color;
+}

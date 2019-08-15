@@ -5,9 +5,12 @@ import { CustomMaterialModule } from './custom-material.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ ],
   imports: [
     CommonModule,
+    CustomMaterialModule
+  ],
+  exports: [
     CustomMaterialModule
   ]
 })
