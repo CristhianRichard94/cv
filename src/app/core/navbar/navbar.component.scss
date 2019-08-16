@@ -1,9 +1,33 @@
 @import '../../../assets/styles/global/colors';
 
 #nav-bar {
-    grid-area: header;
+    position: fixed;
     background-color: $background-dark-color;
     display: flex;
     align-items: center;
-    color: $text-light-color;
+    color: $text-light-color!important;
+    top: 0;
+    margin-bottom: 2rem;
+
 }
+.menu-trigger {
+    display: none;
+}
+
+.menu-buttons{
+    width: 100%
+}
+
+.active-link {
+    border-bottom: 1px solid white;
+    border-radius: 0;
+}
+
+@media (max-width: 600px) {
+    .nav-button-container {
+        display:none!important;
+    }
+    .menu-trigger {
+        display: flex!important;
+    }
+  }

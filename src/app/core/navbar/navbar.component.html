@@ -1,9 +1,21 @@
 <mat-toolbar id="nav-bar">
-    <button mat-button routerLink="/home" routerLinkActive="active-link">Inicio</button>
-    <button mat-button routerLink="/experience">Experiencia</button>
-    <button mat-button routerLink="/education">Estudios</button>
-    <button mat-button routerLink="/about-me">Informacion Personal</button>
-    <button mat-button routerLink=".">
-        <mat-icon aria-hidden="false" aria-label="Descarga mi cv">save_alt</mat-icon>
-    </button>
+        <button class="menu-trigger" mat-button [matMenuTriggerFor]="navbarMenu">
+                <mat-icon aria-hidden="false">menu</mat-icon>
+        </button>
+    <mat-menu #navbarMenu>
+            <button class="menu-buttons" mat-button routerLink="/home" routerLinkActive="active-link-sm">Inicio</button>
+            <button class="menu-buttons" mat-button routerLink="/experience" routerLinkActive="active-link-sm">Experiencia</button>
+            <button class="menu-buttons" mat-button routerLink="/education" routerLinkActive="active-link-sm">Estudios</button>
+            <button class="menu-buttons" mat-button routerLink="/about-me" routerLinkActive="active-link-sm">Informacion Personal</button>
+            <button class="menu-buttons" mat-button> Descargar CV </button>
+    </mat-menu>
+    <div class="nav-button-container">
+        <button mat-button routerLink="/home" routerLinkActive="active-link">Inicio</button>
+        <button mat-button routerLink="/experience" routerLinkActive="active-link">Experiencia</button>
+        <button mat-button routerLink="/education" routerLinkActive="active-link">Estudios</button>
+        <button mat-button routerLink="/about-me" routerLinkActive="active-link">Informacion Personal</button>
+        <button mat-button routerLink=".">
+            <mat-icon aria-hidden="false" aria-label="Descarga mi cv">save_alt</mat-icon>
+        </button>
+    </div>
 </mat-toolbar>
