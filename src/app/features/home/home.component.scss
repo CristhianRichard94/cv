@@ -1,40 +1,54 @@
-@import '../../../assets/styles/styles.scss';
+@import "../../../assets/styles/styles.scss";
+@import "../../../assets/styles/global/_colors.scss";
 
+:host {
+  background: url("../../../assets/images/photo-1534972195531-d756b9bfa9f2.jpg")
+    no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: $text-light-color;
+  width: 100%;
+}
+.buttons-container {
+  color: $text-light-color;
+
+}
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .container {
-    display: grid;
-    height: 100%;
-    grid-template: "main main side2" 1fr "footer footer footer" 40px / 25% 50% 25%
+  display: flex;
+  height: 100%;
 }
 
-main {
-    grid-area: main;
-    background-color: $background-light-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $text-dark-color;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.main h1 {
+  margin: 2rem 0;
+}
+.ps p {
+  margin: 0.5rem 0;
 }
 
-.side {
-    background-color: $text-dark-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $text-light-color;
+.under-construction {
+  background-color: $text-light-color;
+  display: flex;
+  align-items: center;
+  color: $text-dark-color;
+  border-radius: 10px
 }
-.side2 {
-    grid-area: side2;
+.under-construction p {
+  padding: .5rem
 }
-
-footer {
-    grid-area: footer;
-    background-color: $background-dark-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $text-light-color;
+.under-construction img {
+  max-width: 25vw;
+  padding: .5rem
 }

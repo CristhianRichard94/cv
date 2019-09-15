@@ -5,10 +5,29 @@
     background-color: $background-dark-color;
     display: flex;
     align-items: center;
+    height: 10vh!important;
     color: $text-light-color!important;
     top: 0;
-    margin-bottom: 2rem;
-
+    justify-content: space-between
+}
+.sm-menu {
+    position: absolute;
+    top: 10vh;
+    height: 100%;
+    width: 100%;
+}
+.buttons {
+    display: flex;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    color: $text-light-color!important;
+    background: #343434;
+    width: 100%;
+    z-index: 2010;
+}
+hr {
+    margin: 0
 }
 .menu-trigger {
     display: none;
@@ -18,12 +37,28 @@
     width: 100%
 }
 
+.active-link-sm {
+    background-color: $text-light-color;
+    color: $text-dark-color;
+}
+
 .active-link {
     border-bottom: 1px solid white;
     border-radius: 0;
 }
 
-@media (max-width: 600px) {
+.backdrop {
+    z-index: 2000;
+    color: whitesmoke;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  
+@media (max-width: 930px) {
     .nav-button-container {
         display:none!important;
     }

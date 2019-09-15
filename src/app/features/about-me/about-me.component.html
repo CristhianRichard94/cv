@@ -1,1 +1,30 @@
-<p>about-me works!</p>
+<div class="container">
+    <h1 class="mat-display-2 sm-center" >{{ 'PersonalInfo.title' | translate  | uppercase }}</h1>
+    <p >{{ 'PersonalInfo.line1' | translate }}<strong>Argentina</strong></p>
+    <p >{{ 'PersonalInfo.line2' | translate }}<strong>{{age}}</strong></p>
+    <p >{{ 'PersonalInfo.line3' | translate }}<strong>{{ 'Other.degree' | translate }}</strong></p>
+    <h3 >{{ 'PersonalInfo.hobbies' | translate }}</h3>
+    <mat-chip-list class="chip-list">
+        <mat-chip color="primary">
+                <i class="fas fa-futbol"></i>
+            </mat-chip>
+        <mat-chip color="primary">
+                <i class="fas fa-running"></i>
+            </mat-chip>
+        <mat-chip color="primary">
+                <i class="fas fa-laptop"></i>
+            </mat-chip>
+        <mat-chip color="primary">
+                <i class="fas fa-users"></i>
+            </mat-chip>
+        <mat-chip color="primary">
+                <i class="fas fa-beer"></i>
+            </mat-chip>
+        </mat-chip-list>
+    <h1 class="sm-center" >
+        {{ 'PersonalInfo.skills' | translate }}
+    </h1>
+    <mat-chip-list class="chip-list">
+        <mat-chip color="primary" *ngFor="let skill of skills">{{skill}}</mat-chip>
+    </mat-chip-list>
+</div>

@@ -1,0 +1,48 @@
+@import '../../../assets/styles/global/colors';
+
+:host {
+    width: 100%
+}
+.container {
+    margin: .5rem;
+    text-align: justify
+}
+
+h1 {
+    width: 100%;
+    text-align: center
+}
+
+h3 {
+    background-color: $secondary-color;
+    border-radius: 5px;
+    color: $text-light-color;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+h3 a {
+    display: flex;
+}
+h3 button {
+    margin-left: 1rem
+}
+
+.project-header {
+    display: flex;
+    align-items: center
+}
+.project-header mat-icon {
+    color: $secondary-color!important;
+}
+
+.skill-icon {
+    width: 28px;
+}
+
+.project-header a {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}

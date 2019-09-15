@@ -1,21 +1,49 @@
 <mat-toolbar id="nav-bar">
-        <button class="menu-trigger" mat-button [matMenuTriggerFor]="navbarMenu">
-                <mat-icon aria-hidden="false">menu</mat-icon>
+    <div class="buttons-container">
+        <button class="menu-trigger" mat-button (click)="smMenu = !smMenu">
+            <mat-icon >menu</mat-icon>
         </button>
-    <mat-menu #navbarMenu>
-            <button class="menu-buttons" mat-button routerLink="/home" routerLinkActive="active-link-sm">Inicio</button>
-            <button class="menu-buttons" mat-button routerLink="/experience" routerLinkActive="active-link-sm">Experiencia</button>
-            <button class="menu-buttons" mat-button routerLink="/education" routerLinkActive="active-link-sm">Estudios</button>
-            <button class="menu-buttons" mat-button routerLink="/about-me" routerLinkActive="active-link-sm">Informacion Personal</button>
-            <button class="menu-buttons" mat-button> Descargar CV </button>
-    </mat-menu>
-    <div class="nav-button-container">
-        <button mat-button routerLink="/home" routerLinkActive="active-link">Inicio</button>
-        <button mat-button routerLink="/experience" routerLinkActive="active-link">Experiencia</button>
-        <button mat-button routerLink="/education" routerLinkActive="active-link">Estudios</button>
-        <button mat-button routerLink="/about-me" routerLinkActive="active-link">Informacion Personal</button>
-        <button mat-button routerLink=".">
-            <mat-icon aria-hidden="false" aria-label="Descarga mi cv">save_alt</mat-icon>
-        </button>
+        <div class="nav-button-container">
+            <button mat-button routerLink="/home"
+                routerLinkActive="active-link">{{ 'Sections.home' | translate | uppercase}}</button>
+            <button mat-button routerLink="/experience"
+                routerLinkActive="active-link">{{ 'Sections.experience' | translate |uppercase }}</button>
+            <button mat-button routerLink="/education"
+                routerLinkActive="active-link">{{ 'Sections.education' | translate | uppercase}}</button>
+            <button mat-button routerLink="/about-me"
+                routerLinkActive="active-link">{{ 'Sections.info' | translate | uppercase}}</button>
+            <button mat-button routerLink="/projects"
+                routerLinkActive="active-link">{{ 'Sections.projects' | translate | uppercase}}</button>
+            <button mat-button>
+                <a href="../../../assets/{{'Other.Files.cv' | translate }}" download>
+                    {{ 'Other.download' | translate | uppercase}}
+                </a>
+            </button>
+        </div>
     </div>
+    <h4>Cristhian Richard</h4>
 </mat-toolbar>
+<div *ngIf="smMenu" class="sm-menu">
+        <div class="buttons">
+            <button class="menu-buttons" mat-button routerLink="/home" (click)="smMenu = false"
+                routerLinkActive="active-link-sm">{{ 'Sections.home' | translate | uppercase}}</button>
+            <button class="menu-buttons" mat-button routerLink="/experience" (click)="smMenu = false"
+                routerLinkActive="active-link-sm">{{ 'Sections.experience' | translate | uppercase}}</button>
+            <button class="menu-buttons" mat-button routerLink="/education" (click)="smMenu = false"
+                routerLinkActive="active-link-sm">{{ 'Sections.education' | translate | uppercase }}</button>
+            <button class="menu-buttons" mat-button routerLink="/about-me" (click)="smMenu = false"
+                routerLinkActive="active-link-sm">{{ 'Sections.info' | translate | uppercase }}</button>
+            <button class="menu-buttons" mat-button routerLink="/projects" (click)="smMenu = false"
+                routerLinkActive="active-link-sm">{{ 'Sections.projects' | translate | uppercase}}</button>
+            <button class="menu-buttons" mat-button (click)="smMenu = false">
+                <a href="../../../assets/{{'Other.Files.cv' | translate }}" download>
+                    {{ 'Other.download' | translate | uppercase}}
+                </a>
+            </button>
+            <button class="menu-buttons" mat-button (click)="smMenu = false">
+                <mat-icon>highlight_off</mat-icon>
+            </button>
+        </div>
+        <div class="backdrop" (click)="smMenu = false">
+        </div>
+    </div>

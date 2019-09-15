@@ -1,12 +1,27 @@
 <div class="container">
-<main>
-    <p>main</p>
-</main>
-<div class="side side2">
-        <p>side2</p>
-</div>
-
-<footer>
-    <p>footer</p>
-</footer>
+    <div class="main">
+        <h1 class="mat-display-3 sm-center">{{ 'Home.title' | translate | uppercase }}</h1>
+        <div class="ps">
+            <p>
+                {{ 'Home.line1' | translate }}
+            </p>
+            <p>
+                {{ 'Home.line2' | translate }}
+            </p>
+            <ul>
+                <li>{{ 'Home.skills.skill1' | translate }}</li>
+                <li>{{ 'Home.skills.skill2' | translate }}</li>
+                <li>{{ 'Home.skills.skill3' | translate }}</li>
+            </ul>
+            <p>
+                {{ 'Home.line3' | translate }}
+            </p>
+        </div>
+        <div class="under-construction">
+            <p>
+                {{'Home.underConstruction' | translate}}
+            </p>
+            <img src="../../../assets/icons/Bulldozer-595b40b75ba036ed117d56f7.svg">
+        </div>
+    </div>
 </div>

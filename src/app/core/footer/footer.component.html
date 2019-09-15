@@ -1,1 +1,24 @@
-<p>footer works!</p>
+<div class="container">
+    <button mat-button >
+        <a href="https://www.linkedin.com/in/cristhian-richard-bb9060174/" target="_blank" matTooltip="{{'Tooltips.linkedin' | translate}}">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </button>
+    <button mat-button >
+        <a href="https://github.com/CristhianRichard94" target="_blank" matTooltip="{{'Tooltips.github' | translate}}">
+            <i class="fab fa-github"></i>
+        </a>
+    </button>
+    <button mat-button>
+        <a href="../../../assets/{{'Other.Files.cv' | translate }}" matTooltip="{{'Other.download' | translate}}" download>
+            <mat-icon aria-hidden="false">save_alt</mat-icon>
+        </a>
+    </button>
+    <button mat-button class="menu-trigger" mat-button [matMenuTriggerFor]="languageMenu" matTooltip="{{ 'Tooltips.lang' | translate}}">
+        <mat-icon aria-hidden="false">language</mat-icon>
+        </button>
+    <mat-menu #languageMenu class="lang-menu">
+        <button mat-menu-item class="menu-buttons"  [ngClass]="{'active': activeLang == 'es'}" (click)="changeLang('es')" >{{ 'Other.Languages.es' | translate }}</button>
+        <button mat-menu-item class="menu-buttons" [ngClass]="{'active': activeLang == 'en'}" (click)="changeLang('en')" >{{ 'Other.Languages.en' | translate }}</button>
+    </mat-menu>
+</div>

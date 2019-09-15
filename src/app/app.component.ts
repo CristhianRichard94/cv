@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  languageList = [{ code: 'en', label: 'English' }, { code: 'es', label: 'Espanol' }];
 }

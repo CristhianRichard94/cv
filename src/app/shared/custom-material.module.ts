@@ -1,11 +1,11 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 import {
   MatButtonModule, MatCheckboxModule, MatPaginatorModule, MatSortModule,
   MatTableModule, MatInputModule, MatGridListModule, MatDialogModule, MatTabsModule, MatSelectModule, MatAutocompleteModule,
-  MatSidenavModule, MatToolbarModule, MatIconModule, MatBottomSheetModule, MatBottomSheetRef, MatMenuModule
+  MatSidenavModule, MatToolbarModule, MatIconModule, MatBottomSheetModule, MatMenuModule, MatChipsModule, MatCardModule, MatTooltipModule, MatExpansionModule
 } from '@angular/material';
-import {OverlayModule} from '@angular/cdk/overlay';
-import {CdkTableModule} from '@angular/cdk/table';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { CdkTableModule } from '@angular/cdk/table';
 
 @NgModule({
   exports: [
@@ -28,7 +28,11 @@ import {CdkTableModule} from '@angular/cdk/table';
     MatTableModule,
     MatPaginatorModule,
     MatBottomSheetModule,
-    MatMenuModule
+    MatMenuModule,
+    MatChipsModule,
+    MatCardModule,
+    MatTooltipModule,
+    MatExpansionModule
   ]
 })
 export class CustomMaterialModule {

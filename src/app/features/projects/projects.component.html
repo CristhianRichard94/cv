@@ -1,1 +1,72 @@
-<p>projects works!</p>
+<div class="container">
+    <h1 class="mat-display-2 sm-center">{{ 'Projects.title' | translate  | uppercase}}</h1>
+    <div class="project">
+        <div class="project-header">
+            <h3>{{ 'Projects.project1' | translate }}</h3>
+            <button mat-icon-button class="btn-primary">
+                <a href="https://github.com/GIBDBigData/tweets-harvester" target="_blank"
+                    matTooltip="{{'Other.viewCode' | translate}}">
+                    <mat-icon aria-hidden="false">code</mat-icon>
+                </a>
+            </button>
+            <mat-chip-list class="chip-list">
+                <mat-chip color="primary">
+                    <img src="../../../assets/images/vue.png" alt="" class="skill-icon">
+                </mat-chip>
+                <mat-chip color="primary">
+                    <img src="../../../assets/images/python.png" alt="" class="skill-icon">
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+        <p>
+            {{ 'Projects.p1line1' | translate }}
+        </p>
+        <p>
+            {{ 'Projects.p1line2' | translate }}
+        </p>
+    </div>
+    <div class="project">
+        <div class="project-header">
+            <h3>{{ 'Projects.project2' | translate }}</h3>
+            <button mat-icon-button class="btn-primary">
+                <a href="https://gitlab.com/ClienteServidor2018/Logistica" target="_blank"
+                    matTooltip="{{'Other.viewCode' | translate}}">
+                    <mat-icon aria-hidden="false">code</mat-icon>
+                </a>
+            </button>
+            <mat-chip-list class="chip-list">
+                <mat-chip color="primary">
+                    <img src="../../../assets/images/angular.png" alt="" class="skill-icon">
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+        <p>
+            {{ 'Projects.p2line1' | translate }}
+        </p>
+        <p>
+            {{ 'Projects.p2line2' | translate }}
+        </p>
+    </div>
+    <div class="project">
+        <div class="project-header">
+            <h3>{{ 'Projects.project3' | translate }}</h3>
+            <button mat-icon-button class="btn-primary">
+                <a href="https://github.com/CristhianRichard94/DigitalSignage" target="_blank"
+                    matTooltip="{{'Other.viewCode' | translate}}">
+                    <mat-icon aria-hidden="false">code</mat-icon>
+                </a>
+            </button>
+            <mat-chip-list class="chip-list">
+                <mat-chip color="primary">
+                    <img src="../../../assets/images/csharp.png" alt="" class="skill-icon">
+                </mat-chip>
+            </mat-chip-list>
+        </div>
+        <p>
+            {{ 'Projects.p3line1' | translate }}
+        </p>
+        <p>
+            {{ 'Projects.p3line2' | translate }}
+        </p>
+    </div>
+</div>

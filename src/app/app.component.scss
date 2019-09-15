@@ -1,7 +1,50 @@
-body {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+@import '../assets/styles/global/colors';
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column
+}
+.main-content {
+  flex-grow: 1;
+  margin-top: 10vh;
+  height: 84vh;
+  color: $text-dark-color;
+  background-color: whitesmoke;
+  display: flex;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: $primary-color;
+}
+
+.main-content::-webkit-scrollbar {
+  width: 6px
+}
+ 
+.main-content::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+
+
+
+.backdrop {
+  background-color: rgba(0,0,0,.9);
+  z-index: 500;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  font-size: 2rem
+}
+
+.backdrop img {
+  max-width: 40vw
 }

@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { EducationRoutingModule } from './education-routing.module';
 import { EducationComponent } from './education.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
   declarations: [EducationComponent],
   imports: [
     CommonModule,
-    EducationRoutingModule
+    EducationRoutingModule,
+    SharedModule
   ]
 })
 export class EducationModule { }

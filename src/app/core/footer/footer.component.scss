@@ -1,0 +1,30 @@
+@import '../../../assets/styles/global/colors';
+
+
+.container {
+    background-color: $background-dark-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-light-color;
+    height: 6vh!important;
+}
+
+.container button {
+    font-size: 1.4rem;
+}
+.lang-menu {
+    background-color: $background-dark-color;
+}
+
+button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: $text-light-color;
+    color: $text-dark-color;
+    font-weight: bolder;
+}

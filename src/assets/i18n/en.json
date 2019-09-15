@@ -1,0 +1,88 @@
+{
+    "Sections": {
+        "home": "Home",
+        "experience": "Experience",
+        "education": "Education",
+        "info": "Personal Info",
+        "projects": "Projects"
+    },
+    "Home": {
+        "title": "Hi there!",
+        "line1": "I'm a System information engineer, graduated from National Technologic University, Regional Concepción del Uruguay.",
+        "line2": "My Main skills are:",
+        "skills": {
+            "skill1": "Webapps Development, especially Frontend side",
+            "skill2": "Functional Analysis",
+            "skill3": "Data Analysis / Data scientist / Business Analyst"
+        },
+        "line3": "For More information checkout all the other sections",
+        "underConstruction": "The site is still under construction"
+    },
+    "Education": {
+        "line1": "Electrician technician with industrial electronics orientation",
+        "line2": "EET N°2 “Francisco Ramirez”",
+        "line3": "12/2013",
+        "line4": "System Universitary Analyst",
+        "line5": "20/09/2018",
+        "line6": "Information System Engineering",
+        "line7": "06/06/2019",
+        "line8": "National Technologic University Concepcion del Uruguay",
+        "secondary": "High School",
+        "halfGrade": "Intermediate Degree",
+        "universitary": "College Degree",
+        "line9": "Languages",
+        "line10": "English Level B1 (understanding, oral, writing)",
+        "line11": "Deutsch Level A1 (understanding, oral, writing)"
+    },
+    "Experience": {
+        "line1" : "Frontend Developer",
+        "line2" : "Term: Since 06/2019",
+        "line3" : "Research Group",
+        "line4" : "Scholar",
+        "line5" : "Perform as scholar on the Databases Research Group - FRCU UTN",
+        "line6" : "Term: Since 2018",
+        "line7" : "Data Analysis",
+        "line8" : "Project 'Agregando valor'",
+        "line9" : "Data analysis about organizations and return of the obtained results.",
+        "line10" : "Assistant Professor Ad Honorem",
+        "line11" : "Subject 'Data management'",
+        "line12" : "Term: 04/2019 - 06/2019"
+    },
+    "PersonalInfo" : {
+        "title" : "About me",
+        "line1" : "Nationality:",
+        "line2" : "Age: ",
+        "line3" : "Degree: ",
+        "hobbies" : "Hobbies: ",
+        "skills" : "Skills"
+    },
+    "Projects": {
+        "title": "My Projects",
+        "project1": "Tweets Harvester",
+        "project2": "Shipping logistic WebApp",
+        "project3": "Digital Signage Application",
+        "p1line1": "The objective of Tweets Harvester is the capture, cleaning and storage for future processing of tweets in real time, based on keywords that function as filters.",
+        "p1line2": "This project was developed for the FRCU - UTN database research group, within the framework of the agenda setting project, which attempts to know how newspapers influence social networks and vice versa.",
+        "p2line1": "This app aims to management suppliers, orders for the production of auto parts, control of manufacturing status, grouping and shipment of packages",
+        "p2line2": "Development carried out for the 'Client-Server Application Development' subject of the FRCU - UTN",
+        "p3line1": "It allows the management and visualization of advertising campaigns composed of images and text banners obtainable from RSS feeds",
+        "p3line2": "Development promoted by the 'Programming Workshop' chair of the FRCU - UTN"
+    },
+    "Other": {
+        "degree": "System information engineer",
+        "download": "Download my CV",
+        "Languages": {
+            "en": "English",
+            "es": "Spanish"
+        },
+        "viewCode": "Checkout the code",
+        "Files": {
+            "cv": "CVRichard2019-en.pdf"
+        }
+    },
+    "Tooltips": {
+        "lang": "Languages",
+        "linkedin": "Follow me on Linkedin",
+        "github": "Checkout my repo"
+    }
+}

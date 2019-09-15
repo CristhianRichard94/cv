@@ -1,0 +1,25 @@
+.container {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column
+}
+
+h1 {
+  width: 100%;
+  text-align: center
+}
+
+.chip-list {
+  display: flex;
+  padding: 0 1rem
+}
+.mat-chip-list-wrapper {
+    justify-content: center!important;
+}
+
+@media (max-width: 450px) {
+  .chip-list {
+    padding: 0;
+    justify-content: center;
+  }
+}
