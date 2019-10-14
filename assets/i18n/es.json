@@ -1,0 +1,92 @@
+{
+    "Sections": {
+        "home": "Inicio",
+        "experience": "Experiencia",
+        "education": "Estudios",
+        "info": "Información Personal",
+        "projects": "Proyectos"
+    },
+    "Home": {
+        "title": "Hola!",
+        "line1": "Soy ingeniero en sistemas de información, recibido en la Universidad Tecnologica nacional, regional Concepción del Uruguay.",
+        "line2": "Mis principales habilidades son:",
+        "skills": {
+            "skill1": "Desarrollo de aplicaciones web, en especial Frontend.",
+            "skill2": "Análisis Funcional",
+            "skill3": "Análisis de datos / Análisis de negocio"
+        },
+        "line3": "Para más información revisa las demás secciones.",
+        "underConstruction": "El sitio se encuentra aún en construcción"
+    },
+    "Education": {
+        "line1": "Técnico electricista con orientación a electrónica industrial.",
+        "line2": "EET N°2 “Francisco Ramirez”",
+        "line3": "12/2013",
+        "line4": "Analista Universitario de sistemas",
+        "line5": "20/09/2018",
+        "line6": "Ingeniería en Sistemas de Información",
+        "line7": "06/06/2019",
+        "line8": "Universidad Tecnológica Nacional U.T.N. Concepción del Uruguay",
+        "secondary": "Secundario",
+        "halfGrade": "Intermedio",
+        "universitary": "Universitario",
+        "line9": "Idiomas",        
+        "english": "Inglés",
+        "line10": "Nivel B1 (comprensión, oral, escritura).",
+        "deutsch": "Alemán",
+        "line11": "Nivel A1 (comprensión oral, escritura)."
+    },
+    "Experience": {
+        "line1": "Desarrollador Frontend",
+        "line2": "Período: 06/2019 - actualidad",
+        "line3": "Grupo de investigación",
+        "line4": "Becario",
+        "line5": "Desarrollo como becario dentro del grupo de investigación de base de datos de la FRCU-UTN.",
+        "line6": "2018 - Actualidad",
+        "line7": "Análisis de datos",
+        "line8": "Proyecto 'Agregando valor'",
+        "line9": "Análisis de datos de empresas y devolución de resultados obtenidos.",
+        "line10": "Ayudante de cátedra Ad Honorem",
+        "line11": "Asignatura 'Gestión de datos'",
+        "line12": "Período: 04/2019 - 06/2019",
+        "line13": "Período: 02/2019 - 04/2019"
+    },
+    "PersonalInfo": {
+        "title": "Sobre mí",
+        "line1": "Nacionalidad: ",
+        "line2": "Edad: ",
+        "line3": "Título: ",
+        "hobbies": "Pasatiempos: ",
+        "skills": "Herramientas y lenguajes de programación"
+    },
+    "Projects": {
+        "title": "Mis proyectos",
+        "project1": "Tweets Harvester",
+        "project2": "Aplicación Web de logísitica de envíos",
+        "project3": "Aplicación de Cartelería digital",
+        "p1line1": "El objetivo de esta aplicación es la captura, limpieza y almacenamiento para futuro procesamiento de tweets en tiempo real, basándose en palabras claves que funcionan como filtros.",
+        "p1line2": "Este proyecto fue realizado para el grupo de investigación de bases de datos de la FRCU - UTN, dentro del marco del proyecto agenda setting, que intenta saber como influyen los diarios en las redes sociales y viceversa.",
+        "p2line1": "Esta aplicación tiene como objetivo la gestión de distribuidores, pedidos a producción de autopartes, control de estado de la fabricación, agrupamiento y envío de paquetes.",
+        "p2line2": "Desarrollo realizado para la cátedra 'Desarrollo de aplicaciones Cliente-Servidor' de la FRCU - UTN.",
+        "p3line1": "Permite la gestión y visualización de campañas publicitarias compuestas por imágenes y banners de texto obtenibles de fuentes RSS.",
+        "p3line2": "Desarrollo realizado para la cátedra de 'Taller de Programación' de la FRCU - UTN."
+    },
+    "Other": {
+        "degree": "Ingeniero en sistemas de información",
+        "download": "Descarga mi CV",
+        "Languages": {
+            "en": "Inglés",
+            "es": "Español"
+        },
+        "viewCode": "Mira el código",
+        "Files": {
+            "cv": "CVRichard2019-es.pdf"
+        },
+        "loading": "Cargando"
+    },
+    "Tooltips": {
+        "lang": "Idiomas",
+        "linkedin": "Sigueme en Linkedin",
+        "github": "Mira mis repositorios"
+    }
+}

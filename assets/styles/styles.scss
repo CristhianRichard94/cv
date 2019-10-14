@@ -1,0 +1,14 @@
+@import './global/colors';
+
+
+a {
+    text-decoration: none;
+    color: $text-light-color;
+}
+button {
+    color: $text-light-color;
+}
+
+h1 {
+    margin: auto!important;
+}
